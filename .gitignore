@@ -1,1 +1,6 @@
- 
+# Build artifacts
+[Bb]in/
+[Oo]bj/
+
+__pycache__/
+*.pyc 

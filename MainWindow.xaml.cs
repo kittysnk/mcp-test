@@ -19,5 +19,20 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        GenerateGugudan();
+    }
+
+    private void GenerateGugudan()
+    {
+        StringBuilder gugudanText = new StringBuilder();
+        for (int i = 2; i <= 9; i++)
+        {
+            for (int j = 1; j <= 9; j++)
+            {
+                gugudanText.AppendLine($"{i} x {j} = {i * j}");
+            }
+            gugudanText.AppendLine();
+        }
+        GugudanTextBlock.Text = gugudanText.ToString();
     }
 }

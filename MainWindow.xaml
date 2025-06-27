@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gugudan"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="구구단" Height="450" Width="800">
     <Grid>
-
+        <ScrollViewer>
+            <TextBlock x:Name="GugudanTextBlock" FontSize="16" Margin="10"/>
+        </ScrollViewer>
     </Grid>
 </Window>
